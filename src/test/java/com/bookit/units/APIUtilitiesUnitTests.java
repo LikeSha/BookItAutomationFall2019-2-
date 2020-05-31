@@ -1,6 +1,7 @@
 package com.bookit.units;
 
 import com.bookit.utilities.APIUtilities;
+import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -21,4 +22,6 @@ public class APIUtilitiesUnitTests {
         Assert.assertNotNull(tokenForStudent);
         Assert.assertNotNull(tokenForTeacher);
     }
+
+
 }
