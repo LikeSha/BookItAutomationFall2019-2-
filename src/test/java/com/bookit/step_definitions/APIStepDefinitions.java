@@ -19,7 +19,7 @@ import static org.hamcrest.Matchers.*;
 
 public class APIStepDefinitions {
     private RequestSpecification requestSpecification; //this is what we put in given
-    private Response response;//this is were we store response data
+    private Response response;//this is where we store response data
     private String token;//this is what we use for authentication
     private JsonPath jsonPath;//this is were we store JSON body
     private ContentType contentType;//this is what we use to setup content type
