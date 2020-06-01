@@ -25,7 +25,7 @@ public class Hooks {
 
     }
 
-    @Before
+    @Before("@ui")
     public void uiSetup(){
         Driver.getDriver().manage().window().maximize();
     }
