@@ -25,6 +25,10 @@ public class Hooks {
 
     }
 
+    public void uiSetup(){
+        Driver.getDriver().manage().window().maximize();
+    }
+
     @After("@ui")
     public void uiTearDown() {
         Driver.closeDriver();
