@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends BasePage{
 
     @FindBy(name = "email")
     private WebElement email;
@@ -13,7 +13,7 @@ public class LoginPage extends BasePage {
     @FindBy(name = "password")
     private WebElement password;
 
-    public void login(String emailText,String passwordText){
+    public void login(String emailText, String passwordText){
         BrowserUtilities.waitForPageToLoad(10);
         email.sendKeys(emailText);
         password.sendKeys(passwordText, Keys.ENTER);
