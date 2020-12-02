@@ -20,7 +20,7 @@ public class APIUtilities {
 
     /**
      * This method is used to retrieve token from the server.
-     * Token bust be attached to the header of every API call
+     * Token must be attached to the header of every API call
      *
      * @return token
      */
@@ -38,7 +38,7 @@ public class APIUtilities {
 
     /**
      * This method is used to retrieve authorization token from the server for specific role.
-     * Token bust be attached to the header of every API call
+     * Token must be attached to the header of every API call
      *
      * @return token
      */
@@ -70,7 +70,7 @@ public class APIUtilities {
 
     /**
      * This method is used to retrieve token from the server.
-     * Token bust be attached to the header of every API call
+     * Token must be attached to the header of every API call
      *
      * @param email    - email of the user
      * @param password - password the user
