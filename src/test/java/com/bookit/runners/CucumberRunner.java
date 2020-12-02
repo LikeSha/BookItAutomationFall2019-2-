@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
         }, // plugin for generating json report.
         tags = "@create_student_3",// tags to specify which scenario to run which to be ignored
         dryRun = false // dry run its test run, not execution ,it used to ensure that every step definition
-                       // has code implementation
+                       // has code implementation , make dry run = true in the beginning to generate
+                      // step definitions for us in the console. then after implement it ,change it to false.
 
 )
 public class CucumberRunner {
