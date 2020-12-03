@@ -15,7 +15,7 @@ import org.junit.Assert;
 import java.util.List;
 import java.util.Map;
 
-import static io.restassured.RestAssured.*;
+import static io.restassured.RestAssured.*; // when we write "given() request ,if import this ,it works.otherwise not works
 import static org.hamcrest.Matchers.*;
 
 public class APIStepDefinitions {
@@ -42,14 +42,14 @@ public class APIStepDefinitions {
         }
     }
 
-    @When("user sends GET request to {string}")
+    @When("user sends GET request to {string}") // send request to resource path
     public void user_sends_GET_request_to(String path) {
         response = given().accept(contentType).auth().oauth2(token).when().get(path).prettyPeek();
     }
     //  Then user should be able to see 18 rooms
     @Then("user should be able to see {int} rooms")
     public void user_should_be_able_to_see_rooms(int expectedNumberOfRooms) {
-        List<Object> rooms = response.jsonPath().get();
+        List<Object> rooms = response.jsonPath().get();//List<?> rooms = response.jsonPath().get();
         Assert.assertEquals(expectedNumberOfRooms, rooms.size());
     }
 

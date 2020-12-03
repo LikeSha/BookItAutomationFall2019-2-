@@ -12,6 +12,8 @@ import java.util.Objects;
  *         "withWhiteBoard": false
  *     }
  */
+
+// POJO is what we creat from the class ,NOT the class itself!
 public class Room {
     private int id;
     private String name;
