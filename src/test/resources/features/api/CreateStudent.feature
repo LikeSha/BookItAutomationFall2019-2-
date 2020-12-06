@@ -35,3 +35,4 @@ Feature: Create student
       | Lesly      | SDET      | lessleefromb15online@email.com | 1111     | student-team-member | VA              | 15           | Online_Hackers |
 #    we can add only one student
 #  so to resolve this issue, we can delete added student at the end of the test
+  # because once you added one new student, we can not automation anymore ,we must clean up the new added student
