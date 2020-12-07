@@ -94,6 +94,7 @@ public class APIStepDefinitions {
     public void user_deletes_previously_added_students(List<Map<String, String>> dataTable) {
         for (Map<String, String> row: dataTable){
             int userID = APIUtilities.getUserID(row.get("email"), row.get("password"));
+            // row.get( based on column name here) in this case our column name are email and password
             response = APIUtilities.deleteUserByID(userID);
             response.then().statusCode(204);
         }
