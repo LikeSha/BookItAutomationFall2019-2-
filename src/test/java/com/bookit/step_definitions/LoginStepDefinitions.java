@@ -21,6 +21,8 @@ public class LoginStepDefinitions {
 
     @When("user navigates to personal page")
     public void user_navigates_to_personal_page() {
-        loginPage.goToSelfPage();
+        loginPage.goToSelfPage();// goToSelfPage() this method located in BasePage class ,
+                                 // since loginPage class extends
+                                // BasePage class ,so we can also use loginPage.goToSelfPage() method
     }
 }
