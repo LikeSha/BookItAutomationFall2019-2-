@@ -33,6 +33,9 @@ public abstract class BasePage {
         BrowserUtilities.wait(5);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("my")));
         wait.until(ExpectedConditions.elementToBeClickable(my)).click();
+        // or we can use action class code like this :
+        //wait.until(ExpectedConditions.elementToBeClickable(my));
+        //actions.moveToElement(my).pause(2000).click(self)
         self.click();
     }
 
