@@ -22,8 +22,8 @@ public class SelfStepDefinitions {
     public void user_verifies_that_information_displays_correctly(List<Map<String, String>> dataTable) {
         System.out.println("###############[UI validations]###############");
 
-        String fullName = dataTable.get(0).get("first-name") +" "+dataTable.get(0).get("last-name");
-        Assert.assertEquals(fullName, selfPage.getUserInfo("name"));
+        String fullName = dataTable.get(0).get("first-name") +" "+dataTable.get(0).get("last-name");//get("first-name) from column on top
+        Assert.assertEquals(fullName, selfPage.getUserInfo("name")); // assertEquals(expected, actual)
         Assert.assertEquals(dataTable.get(0).get("role"), selfPage.getUserInfo("role"));
         Assert.assertEquals(dataTable.get(0).get("campus-location"), selfPage.getUserInfo("campus"));
         Assert.assertEquals(dataTable.get(0).get("batch-number"), selfPage.getUserInfo("batch").replace("#", ""));
