@@ -35,7 +35,7 @@ public abstract class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(my)).click();
         // or we can use action class code like this :
         //wait.until(ExpectedConditions.elementToBeClickable(my));
-        //actions.moveToElement(my).pause(2000).click(self)
+        //actions.moveToElement(my).pause(2000).click(self).perform();
         self.click();
     }
 
