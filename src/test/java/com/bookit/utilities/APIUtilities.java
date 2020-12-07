@@ -72,6 +72,9 @@ public class APIUtilities {
      * This method is used to retrieve token from the server.
      * Token must be attached to the header of every API call
      *
+     * this method overload the first method " getToken, the only difference is
+     * we provide parameters : email and password
+     *
      * @param email    - email of the user
      * @param password - password the user
      * @return token
