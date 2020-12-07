@@ -19,3 +19,5 @@ public class LoginPage extends BasePage{
         password.sendKeys(passwordText, Keys.ENTER);
     }
 }
+
+// Since we have mixed up UI and API in this project , so we need Hooks in UI as well.

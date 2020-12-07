@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * This class should be used as a parent class for every page class
+ * // Since we have mixed up UI and API in this project , so we need Hooks in UI as well.
  */
 public abstract class BasePage {
 
